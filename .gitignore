@@ -1,1 +1,26 @@
 venv/
+
+
+# Front
+
+# dependencies
+/front_source/node_modules
+/front_source/.pnp
+.pnp.js
+
+# testing
+/front_source/coverage
+
+# production
+/front_source/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
