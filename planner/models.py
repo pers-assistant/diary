@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Record(models.Model):
+    """Record instance"""
+
+    title = models.TextField(verbose_name="Заголовок")
+    content = models.TextField(verbose_name="Содержание")
+    сreated_at = models.DateTimeField(verbose_name="Дата создания", auto_created=True)

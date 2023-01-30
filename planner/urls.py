@@ -1,5 +1,7 @@
 from django.urls import path
 
+from planner import views
+
 urlpatterns = [
-    path('',)
+    path('records/', views.record)
 ]
