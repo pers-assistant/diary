@@ -1,0 +1,6 @@
+site_name: Diary
+nav:
+  - Home: index.md
+  - Task plan: tasks.md
+  - Description: description.md
+theme: readthedocs
