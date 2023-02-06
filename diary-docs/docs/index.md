@@ -1,13 +1,9 @@
-# Welcome to MkDocs
+# Welcome to Dairy docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Description
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Diary is a microservice backend application. Can save personal records of users.
+Records have category for better search need record.
 
 ## Project layout
 

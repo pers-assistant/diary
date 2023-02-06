@@ -6,4 +6,4 @@ class Record(models.Model):
 
     title = models.TextField(verbose_name="Заголовок")
     content = models.TextField(verbose_name="Содержание")
-    сreated_at = models.DateTimeField(verbose_name="Дата создания", auto_now_add=True)
+    created_at = models.DateTimeField(verbose_name="Дата создания", auto_now_add=True)

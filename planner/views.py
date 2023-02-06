@@ -1,21 +1,15 @@
 import json
 
 from django.shortcuts import render
-
 from django.http import HttpResponse
+from rest_framework import viewsets
 
 from planner.models import Record
+from planner.serializers import RecordSerializer
 
 
-def record(request, record_id: int) -> HttpResponse:
-    record = Record.objects.get(pk=record_id)
-    record_dict = {
-        'id': record.pk,
-        'title': record.title,
-        'content': record.content,
-        'created_at': record.сreated_at
-    }
-    return HttpResponse(
-        json.dumps(record_dict),
-        content_type='application/json'
-    )
+class RecordViewSet(viewsets.ModelViewSet):
+    """View for CRUD Record model"""
+    queryset = Record.objects.all()
+    serializer_class = RecordSerializer
+
